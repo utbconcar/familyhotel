@@ -1,0 +1,279 @@
+/***Alla sidor***/
+
+/*Grid för body*/
+body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "nav nav"
+    "slider slider"
+    "btn-slider btn-slider"
+    "welc welc"
+    "book book"
+    "find find"
+    "rest rest"
+    "contact contact"
+    "btn-book btn-book"
+    "sect sect"
+    "foot foot";
+}
+
+nav {
+  grid-area: nav;
+}
+
+section {
+  grid-area: sect;
+}
+
+/*Grid för footer*/
+footer {
+  grid-area: foot;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "ft-nav ft-info";
+}
+
+.footer-nav {
+  grid-area: ft-nav;
+}
+
+.footer-info {
+  grid-area: ft-info;
+}
+
+/*Sida: HEM*/
+.slider {
+  grid-area: slider;
+}
+
+.btn-slider {
+  grid-area: btn-slider;
+}
+
+.welcome {
+  grid-area: welc;
+}
+
+.btn-booking {
+  grid-area: btn-book;
+}
+
+/***Sida: BOKA***/
+/*Grid för bokasidan*/
+.booking {
+  grid-area: book;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "book-h book-h"
+    "book-form book-room";
+}
+
+.booking h1 {
+  grid-area: book-h;
+}
+
+.booking form {
+  grid-area: book-form;
+}
+
+/*Grid för bilder på rumy*/
+.booking .rooms {
+  grid-area: book-room;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "r1"
+    "r2"
+    "r3";
+}
+
+.rooms .room1 {
+  grid-area: r1;
+}
+
+.rooms .room2 {
+  grid-area: r2;
+}
+
+.rooms .room3 {
+  grid-area: r3;
+}
+
+/***Sida: HITTA***/
+/*Grid för hittasidan*/
+.find {
+  grid-area: find;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "find-h find-h"
+    "map find-info";
+}
+
+.find h1 {
+  grid-area: find-h;
+}
+
+.find #map iframe {
+  grid-area: map;
+}
+
+.find-info {
+  grid-area: find-info;
+}
+
+/***Sida: RESTURANG***/
+/*Grid för restaurangsidan*/
+.restaurant {
+  grid-area: rest;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "rest-h rest-h"
+    "m1 m1-info"
+    "m2-info m2"
+    "m3 m3-info"
+    "rest-info rest-info";
+}
+
+.restaurant h1 {
+  grid-area: rest-h;
+}
+
+.restaurant .meal1 {
+  grid-area: m1;
+}
+
+.restaurant .meal1-info {
+  grid-area: m1-info;
+}
+
+.restaurant .meal2 {
+  grid-area: m2;
+}
+
+.restaurant .meal2-info {
+  grid-area: m2-info;
+}
+
+.restaurant .meal3 {
+  grid-area: m3;
+}
+
+.restaurant .meal3-info {
+  grid-area: m3-info;
+}
+
+/*Grid för restauranginfo*/
+.restaurant-info {
+  grid-area: rest-info;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "box rest-hours box2";
+}
+
+.box {
+  grid-area: box;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.restaurant-hours {
+  grid-area: rest-hours;
+}
+
+/***Sida: KONTAKT***/
+/*Grid för kontaktsidan*/
+.contact {
+  grid-area: contact;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "contact-h contact-h"
+    "contact-form contact-info";
+}
+
+.contact h1 {
+  grid-area: contact-h;
+}
+
+.contact form {
+  grid-area: contact-form;
+}
+
+.contact-info {
+  grid-area: contact-info;
+}
+
+/*Grid för media querys för mobilanpassning*/
+@media (max-width: 1050px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav"
+      "slider"
+      "btn-slider"
+      "welc"
+      "book"
+      "find"
+      "rest"
+      "contact"
+      "btn-book"
+      "sect"
+      "foot";
+  }
+}
+
+/*Grid för media querys för mobilanpassning*/
+@media (max-width: 888px) {
+  .booking {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "book-h"
+      "book-form"
+      "book-room";
+  }
+
+  .find {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "find-h"
+      "map"
+      "find-info";
+  }
+
+  .restaurant {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "rest-h"
+      "m1"
+      "m1-info"
+      "m2"
+      "m2-info"
+      "m3"
+      "m3-info"
+      "rest-info";
+  }
+
+  .restaurant-info {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "box"
+      "rest-hours"
+      "box2";
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "contact-h"
+      "contact-info"
+      "contact-form";
+  }
+}

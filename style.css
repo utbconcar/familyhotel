@@ -1,0 +1,553 @@
+/***Alla sidor***/
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #EBEBEB;
+}
+
+nav {
+  background: black;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+}
+
+.logo img {
+  height: 50px;
+  padding: 15px 50px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+nav ul li a.active, nav ul li a:hover {
+  background: white;
+  color: black;
+  transition: .5s;
+}
+
+.btn-check {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+section {
+  padding: 30px 30%;
+}
+
+section p {
+  font-size: 17px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 35px;
+}
+
+footer {
+  background-color: black;
+}
+
+.footer-nav, .footer-info {
+  margin: 20px 20px;
+}
+
+.footer-nav ul li, .footer-info ul li {
+  display: block;
+}
+
+.footer-nav ul li a, .footer-info ul li {
+  color: white;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+/***Sida: HEM***/
+
+/*Style för slideshow*/
+.slider {
+  width: 100%;
+  height: 300px;
+  margin-top: 80px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.slide {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border-bottom: 2px solid black;
+}
+
+.btn-slider {
+  margin-top: -20px;
+  text-align: center;
+}
+
+.btn-slider-left {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 17px;
+}
+
+.btn-slider-right {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 17px;
+}
+
+.btn-slider-left:hover, .btn-slider-right:hover {
+  background-color: white;
+  color: black;
+  transition: .5s;
+}
+
+/*Style för välkommsttext*/
+.welcome {
+  width: 80%;
+  margin: auto;
+}
+
+.welcome h1 {
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.welcome h2 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+/*Style för knapp till att boka*/
+.btn-booking {
+  background-color: black;
+  height: 60px;
+  width: 200px;
+  border-radius: 6px;
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  line-height: 60px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-booking:hover {
+  background-color: white;
+  color: black;
+  transition: .5s;
+}
+
+/***Sida: BOKA och KONTAKT***/
+
+/*Style för boka- och kontaktsidorna och dess formulär*/
+.booking, .contact {
+  margin-top: 80px;
+}
+
+.booking h1, .contact h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.booking form, .contact form {
+  display: grid;
+  grid-row-gap: 20px;
+  margin: 20px auto;
+  width: 70%;
+}
+
+.booking form h2, .contact form h2 {
+  font-weight: 400;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.booking form .area, .contact form .area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking form .area p, .contact form .area p {
+  font-weight: 300;
+  font-size: 17px;
+}
+
+input, select {
+  width: 240px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+textarea {
+  width: 240px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 3px;
+  resize: vertical;
+}
+
+.btn-submit {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 17px;
+  width: 50%;
+  margin: auto;
+}
+
+.btn-submit:hover {
+  background-color: white;
+  color: black;
+  transition: .5s;
+}
+
+/*Style för bilder på rum*/
+.rooms div {
+  width: 80%;
+  height: 250px;
+  margin: auto;
+  margin-top: 20px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-size: cover;
+}
+
+.rooms .room3 {
+  margin-bottom: 20px;
+}
+
+/*Sida: HITTA*/
+
+/*Style för hittasidan*/
+.find {
+  margin-top: 80px;
+}
+
+.find h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 40px;
+  width: 80%;
+  margin: 20px auto 0;
+}
+
+/*Style för google map*/
+.find #map {
+  padding: 20px 40px;
+}
+
+.find #map iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+.find-info p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 35px;
+  padding: 20px 40px;
+}
+
+/***Sida: RESTURANG***/
+
+/*Style för restaurangsidanv*/
+.restaurant {
+  margin-top: 80px;
+}
+
+.restaurant h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+/*Style för bilder på maträtter*/
+.restaurant .meal1, .meal2, .meal3 {
+  width: 80%;
+  height: 300px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-size: cover;
+}
+
+.restaurant aside {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.restaurant aside h2 {
+  font-weight: 400;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.restaurant aside p {
+  font-weight: 300;
+  line-height: 25px;
+}
+
+/*Style för 2 svarta boxar*/
+.box, .box2 {
+  width: 80%;
+  height: 40px;
+  background-color: black;
+  margin: auto;
+  border-radius: 6px;
+}
+
+/*Style för öppettider*/
+.restaurant-hours {
+  background-color: white;
+  width: 400px;
+  margin: auto;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 6px;
+  outline: 3px dashed black;
+  outline-offset: -20px;
+}
+
+.restaurant-hours h2 {
+  font-weight: 400;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 60px 0 20px 0;
+  text-align: center;
+}
+
+.restaurant-hours h3 {
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 0 0 20px 0;
+  text-align: center;
+}
+
+.restaurant-hours p {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 40px;
+  padding: 0 0 60px 0;
+  text-align: center;
+}
+
+/***Sida: KONTAKT***/
+.contact-info {
+  background-color: white;
+  width: 400px;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 6px;
+  outline: 3px dashed black;
+  outline-offset: -20px;
+}
+
+.contact-info h2 {
+  font-weight: 400;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 60px 0 20px 0;
+  text-align: center;
+}
+
+.contact-info p {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 40px;
+  padding: 0 0 60px 0;
+  text-align: center;
+}
+
+/*Style för media querys till mobilanpassning*/
+@media (max-width: 1050px) {
+
+  /***Alla sidor***/
+  .logo img {
+    height: 40px;
+    padding: 20px 30px;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 20px 20%;
+  }
+
+  /***Sida: BOKA och KONTAKT***/
+  input, select {
+    width: 180px;
+  }
+
+  textarea {
+    width: 180px;
+  }
+}
+/*Style för media querys till mobilanpassning*/
+@media (max-width: 888px) {
+
+  /***Alla sidor***/
+  .btn-check {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  nav ul li a.active, nav ul li a:hover {
+    background: none;
+    color: grey;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+
+  section {
+    padding: 20px 10%;
+  }
+
+  /***Sida: BOKA och KONTAKT***/
+  .booking form, .contact form {
+    width: 80%;
+  }
+
+  input, select {
+    width: 200px;
+    height: 40px;
+  }
+
+  textarea {
+    width: 200px;
+  }
+
+  /***Sida: RESTAURANG***/
+  .box, .box2 {
+    margin-bottom: 20px;
+  }
+
+  .restaurant-hours {
+    width: 80%;
+  }
+
+  /***Sida: KONTAKT***/
+  .contact-info {
+    margin-top: 20px;
+    width: 80%;
+  }
+}
+
+/*Style för media querys till anpassning för större skärmar*/
+@media (min-width: 1500px) {
+  .slider {
+    height: 400px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .slider {
+    height: 500px;
+  }
+}
+
+@media (min-width: 2500px) {
+  .slider {
+    height: 800px;
+  }
+
+  .slide {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+  }
+}

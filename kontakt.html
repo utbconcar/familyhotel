@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt - Family Hotel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="grid.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="btn-check">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <a class="logo" href="index.html">
+      <img src="bilder/logo.png" alt="Family Hotel">
+    </a>
+
+    <ul>
+      <li><a href="index.html">Hem</a></li>
+      <li><a href="boka.html">Boka</a></li>
+      <li><a href="hitta.html">Hitta</a></li>
+      <li><a href="rest.html">Restaurang</a></li>
+      <li><a href="kontakt.html" class="active">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <div class="contact">
+    <h1>Kontakta oss</h1>
+
+    <form action="#">
+      <h2>Lämna meddelande</h2>
+      <div class="area">
+        <p>Förnamn</p>
+        <input type="text" name="fnamn" placeholder="ex. Bertil" required>
+      </div>
+
+      <div class="area">
+        <p>Efternamn</p>
+        <input type="text" name="enamn" placeholder="ex. Johansson" required>
+      </div>
+
+      <div class="area">
+        <p>Epost</p>
+        <input type="text" name="epost" placeholder="ex. bertil.johansson@gmail.com" required>
+      </div>
+
+      <div class="area">
+        <p>Tel. nummer</p>
+        <input type="text" name="tel" placeholder="ex. 1234567890" required>
+      </div>
+
+      <div class="area">
+        <p>Meddelande</p>
+        <textarea name="ovrigt" placeholder="Vad vill du berätta?"></textarea>
+      </div>
+
+      <button class="btn-submit">Skicka</button>
+    </form>
+
+    <div class="contact-info">
+      <h2>Family Hotel</h2>
+      <p>Gladvägen 1, 123 45 Malmö
+        <br>Epost: familyhotel@hotel.com
+        <br>Tel: 1234567890</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="boka.html">Boka</a></li>
+        <li><a href="hitta.html">Hitta</a></li>
+        <li><a href="rest.html">Restaurang</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-info">
+      <ul>
+        <li>Family Hotel</li>
+        <li>Gladvägen 1, 123 45 Malmö</li>
+        <li>Epost: familyhotel@hotel.com</li>
+        <li>Tel: 1234567890</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

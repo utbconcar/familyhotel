@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hem - Family Hotel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="grid.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="btn-check">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <a class="logo" href="index.html">
+      <img src="bilder/logo.png" alt="Family Hotel">
+    </a>
+
+    <ul>
+      <li><a href="index.html" class="active">Hem</a></li>
+      <li><a href="boka.html">Boka</a></li>
+      <li><a href="hitta.html">Hitta</a></li>
+      <li><a href="rest.html">Restaurang</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!--<div class="slider"></div>-->
+
+  <div class="slider">
+    <img class="slide" src="bilder/utsida.jpg" alt="Bild på utsida">
+    <img class="slide" src="bilder/room1.jpg" alt="Bild på ett rum">
+    <img class="slide" src="bilder/insida.jpg" alt="Bild på insida">
+    <img class="slide" src="bilder/room2.jpg" alt="Bild på ett rum">
+    <img class="slide" src="bilder/bio.jpg" alt="Bild på biograf">
+    <img class="slide" src="bilder/ovansida.jpg" alt="Bild på ovansida">
+
+  </div>
+  <div class="btn-slider">
+
+    <button class="btn-slider-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="btn-slider-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("slide");
+      if (n > x.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = x.length
+      }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+  <div class="welcome">
+    <h1>Välkommen till Family Hotel</h1>
+    <h2>Ett hotell för hela familjen</h2>
+  </div>
+  <a class="btn-booking" href="boka.html">Boka</a>
+  <section>
+    <p>Family Hotel är ett centralt hotell i Malmö, inte långt från stationen.
+      Hos oss njuter du av en god nattsömn, kökets fina mathantverk och vår egna <a href="https://www.visitlillebaelt.com/little-belt/events/panorama-biografen-cinema-gdk1079281" target="_blank">biograf</a>.
+      <!--Länk till biografen jag "tagit"--> Family Hotel är så mycket mer än bara övernattning. Vi vill att du känner dig som hemma vare sig du är här på konferens, för en romantisk helg, en middag eller
+      stannar till på en kopp kaffe. Varmt välkommen till ett av Malmös mest omtyckta hotell!<br>
+
+      <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus massa et lacus congue faucibus. Proin vitae ante ut ante hendrerit ultrices ac non lectus. Mauris quis dictum ligula, sed pretium enim. Duis nulla sem, ultrices eu
+      odio
+      vitae, iaculis ultrices nisi. Curabitur lorem sapien, euismod eget consectetur ac, faucibus ac turpis. Suspendisse imperdiet mauris vitae mauris dictum lacinia. Duis rutrum elit enim, a feugiat nibh bibendum nec. Nunc hendrerit dui in arcu
+      sollicitudin venenatis. Sed varius ut lacus quis pellentesque. Suspendisse ornare diam et turpis sagittis consectetur. Vivamus nec suscipit sapien. Donec tempus a massa et tempor. Phasellus consequat, metus ut bibendum accumsan, velit mi mattis
+      augue, ut luctus enim erat a turpis. Sed egestas ligula eget nibh mattis mollis. Aenean convallis venenatis ex, ut accumsan turpis luctus non.<br>
+    </p>
+  </section>
+
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="boka.html">Boka</a></li>
+        <li><a href="hitta.html">Hitta</a></li>
+        <li><a href="rest.html">Restaurang</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-info">
+      <ul>
+        <li>Family Hotel</li>
+        <li>Gladvägen 1, 123 45 Malmö</li>
+        <li>Epost: familyhotel@hotel.com</li>
+        <li>Tel: 1234567890</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
