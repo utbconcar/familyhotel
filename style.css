@@ -250,12 +250,17 @@ textarea {
   font-size: 17px;
   width: 50%;
   margin: auto;
+  text-align: center;
 }
 
 .btn-submit:hover {
   background-color: white;
   color: black;
   transition: .5s;
+}
+
+.thx {
+  margin-bottom: 20px;
 }
 
 /*Style för bilder på rum*/
